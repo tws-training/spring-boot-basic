@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-ls ./build/libs
+set -e
+
 ssh -i $keyfile ubuntu@$WebServer 'mkdir -p /home/ubuntu/works/$NameSpace'
 scp -i $keyfile ./build/libs/demo-*.jar ubuntu@$WebServer:/home/ubuntu/works/$NameSpace/demo.jar
 ssh -i $keyfile ubuntu@$WebServer 'ls /home/ubuntu/works/$NameSpace'
