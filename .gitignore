@@ -27,4 +27,3 @@
 /.nb-gradle/
 
 Jenkinsfile
-deploy.sh
