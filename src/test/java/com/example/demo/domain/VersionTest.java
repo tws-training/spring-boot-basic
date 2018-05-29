@@ -15,6 +15,7 @@ public class VersionTest {
     @Test
     public void should_return_1_0_0_when_get_ver() {
         String result = Version.getVerStr();
+        
         assertThat(result).isEqualTo("1.0.0");
     }
 
